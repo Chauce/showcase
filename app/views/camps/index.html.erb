@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Camps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Latlong</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Weatheroverview</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @camps.each do |camp| %>
+      <tr>
+        <td><%= camp.name %></td>
+        <td><%= camp.latLong %></td>
+        <td><%= camp.latitude %></td>
+        <td><%= camp.longitude %></td>
+        <td><%= camp.weatheroverview %></td>
+        <td><%= link_to 'Show', camp %></td>
+        <td><%= link_to 'Edit', edit_camp_path(camp) %></td>
+        <td><%= link_to 'Destroy', camp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Camp', new_camp_path %>

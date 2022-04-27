@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  temp: 9.99
+  lat: MyString
+  long: MyString
+  snow: 9.99
+  precip: 9.99
+  timestamp_utc: 2022-03-28 21:06:01
+
+two:
+  temp: 9.99
+  lat: MyString
+  long: MyString
+  snow: 9.99
+  precip: 9.99
+  timestamp_utc: 2022-03-28 21:06:01

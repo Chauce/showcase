@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Temp:</strong>
+  <%= @forecast.temp %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @forecast.lat %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @forecast.long %>
+</p>
+
+<p>
+  <strong>Snow:</strong>
+  <%= @forecast.snow %>
+</p>
+
+<p>
+  <strong>Precip:</strong>
+  <%= @forecast.precip %>
+</p>
+
+<p>
+  <strong>Timestamp utc:</strong>
+  <%= @forecast.timestamp_utc %>
+</p>
+
+<%= link_to 'Edit', edit_forecast_path(@forecast) %> |
+<%= link_to 'Back', forecasts_path %>
